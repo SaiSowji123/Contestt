@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    
+    <main class="container">
+    
+      <section class="books-table" id="books">
+        <h1>Books</h1>
+        <table>
+            <thead>
+                <tr class="row">
+                    <th class="col">Book Id</th>
+                    <th class="col">Title</th>
+                    <th class="col">Author</th>
+                    <th class="col">Genre</th>
+                    <th class="col">Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="row">
+                    <td class="col">1</td>
+                    <td class="col">
+                        <a href="#">Geetanjali</a>
+                        <table class="ns-table">
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Publication Date : 2000
+                                </td>
+                            </tr>
+                            <tr class="books-row">
+                                <td class="ns-col">
+                                    Page Count: 250
+                                </td>
+                            </tr>
+                            <tr class="books-row">
+                                <td class="ns-col">
+                                    ISBN: 123-4567890123
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col">
+                        Rabindra Nath Tagore
+                    </td>
+                    <td class="col">
+                        Male
+                    </td>
+                    <td class="col">
+                        Available
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col">2</td>
+                    <td class="col">
+                        <a href="#">Raghuvamsa</a>
+                        <table class="ns-table">
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Publication Date : 2005
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Page Count: 300
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    ISBN: 123-04567890456
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col">
+                        Kalidas
+                    </td>
+                    <td class="col">
+                        Male
+                    </td>
+                    <td class="col">
+                        Available
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col">3</td>
+                    <td class="col">
+                        <a href="#">Avigyan Sakuntalam</a>
+                        <table class="ns-table">
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Publication Date : 2010
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Page Count: 350
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    ISBN: 123-4567890789
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col">
+                        Kalidas
+                    </td>
+                    <td class="col">
+                        Male
+                    </td>
+                    <td class="col">
+                        Available
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td class="col">4</td>
+                    <td class="col">
+                        <a href="#">Shakuntala</a>
+                        <table class="ns-table">
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Publication Date : 2000
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    Page Count: 250
+                                </td>
+                            </tr>
+                            <tr class="ns-row">
+                                <td class="ns-col">
+                                    ISBN: 042-454685798
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col">
+                        Kalidas
+                    </td>
+                    <td class="col">
+                        Male
+                    </td>
+                    <td class="col">
+                        Available
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+      </section>
+
+      <section class="registration-form" id="form">
+        <h1>Register</h1>
+        <form action="#" method="post">
+            <div class="form-control">
+                <label for="firstname">First Name:</label> <br>
+                <input type="text" name="fName" id="fName" placeholder="enter your first name" required>
+            </div>
+            <div class="group">
+                <label for="lastName">Last Name:</label> <br>
+                <input type="text" name="lName" id="lName" placeholder="enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="dateofbirth">Date of Birth:</label> <br>
+                <input type="date" name="dob" id="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label> <br>
+                <input type="number" name="age" id="age" min="5" max="100" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label> <br>
+                <input type="email" name="email" id="email" placeholder="enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label> <br>
+                <input type="password" name="password" id="password" placeholder="enter your password" pattern="^(?:0(?=1|$))?(?:1(?=2|$))?(?:2(?=3|$))?(?:3(?=4|$))?(?:4(?=5|$))?(?:5(?=6|$))?(?:6(?=7|$))?(?:7(?=8|$))?(?:8(?=9|$))?(?:9$)?$" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label> <br>
+                <input type="password" name="confirm-password" id="confirm-password" pattern="^(?:0(?=1|$))?(?:1(?=2|$))?(?:2(?=3|$))?(?:3(?=4|$))?(?:4(?=5|$))?(?:5(?=6|$))?(?:6(?=7|$))?(?:7(?=8|$))?(?:8(?=9|$))?(?:9$)?$" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+           
+        </form>
+      </section>
+
+      
+    
+    </main>
+  </body>
+</html>
